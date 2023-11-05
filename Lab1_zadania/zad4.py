@@ -1,5 +1,8 @@
-droga = int(input("Podaj drogę pokonaną przez samochód (km): "))
-spalanie = int(input("Podaj średnie spalanie samochodu (l/100km): "))
+import random
+
+droga = random.randint(1, 100000)
+print("Pokonana droga:", droga, "km")
+spalanie = float(input("Podaj średnie spalanie samochodu (l/100km): "))
 
 zuzycie = droga * spalanie / 100
 koszty = zuzycie * 6.5
