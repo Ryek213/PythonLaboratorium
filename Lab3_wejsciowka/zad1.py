@@ -8,4 +8,4 @@ while a < b:
         suma += a
     a += 1
 
-print(f"Suma wszystkich liczb nieparzystych z zakresu [{a}, {b}] wynosi: {suma}")
+print(f"Suma wszystkich liczb nieparzystych z podanego wykresu wynosi: {suma}")
