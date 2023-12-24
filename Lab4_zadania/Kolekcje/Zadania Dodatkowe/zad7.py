@@ -18,28 +18,27 @@ lista = list()
 
 for i in range(n):
     rand = random.randint(1, x)
-    pom = ""
+    pom = str()
 
     for k in range(rand):
         pom += chr(random.randint(ord("a"), ord("z")))
 
     lista.append(pom)
 
-krotka = tuple(lista)
-print(krotka)
+print(lista)
 
 while True:
-    cw = input("Wybierz ćwiczenie [a, b, c, d]: ")
+    cw = input("Wybierz ćwiczenie [a, b, c, d, e]: ")
     match cw:
         case "a":
             s = 0
-            for i in krotka:
+            for i in lista:
                 s += len(i)
             print(f"Liczba znaków w liście: {s}")
 
         case "b":
             s = 0
-            for i in krotka:
+            for i in lista:
                 for k in i:
                     if k == "k":
                         s += 1
@@ -47,7 +46,7 @@ while True:
 
         case "c":
             s = 0
-            for i in krotka:
+            for i in lista:
                 if i.find("kt") != -1:
                     s += 1
             print(f'Liczba wystąpień ciągu "kt" w liście: {s}')
@@ -60,10 +59,16 @@ while True:
                 else:
                     break
             z = 0
-            for i in krotka:
+            for i in lista:
                 if len(i) > s:
                     z += 1
             print(f"Liczba ciągów znaków dłuższych niż ({s}): {z}")
+
+        case "e":
+            pom_lista = list()
+            for i in lista:
+                pom_lista.append("a" + i + "z")
+            print(pom_lista)
 
         case _:
             break
