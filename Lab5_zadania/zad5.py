@@ -1,24 +1,24 @@
 def bmi(masa, wzrost):
-    bmi = masa/(wzrost/100)**2
+    bmi_w = masa / (wzrost / 100) ** 2
 
-    if bmi < 16:
+    if bmi_w < 16:
         zakres = "wyglodzenie"
-    elif bmi < 17:
+    elif bmi_w < 17:
         zakres = "wychudzenie"
-    elif bmi < 18.5:
+    elif bmi_w < 18.5:
         zakres = "niedowaga"
-    elif bmi < 25:
+    elif bmi_w < 25:
         zakres = "prawidlowa masa ciala"
-    elif bmi < 30:
+    elif bmi_w < 30:
         zakres = "nadwaga"
-    elif bmi < 35:
+    elif bmi_w < 35:
         zakres = "otylosc 1 stopnia"
-    elif bmi < 40:
+    elif bmi_w < 40:
         zakres = "otylosc 2 stopnia"
     else:
         zakres = "otylosc 3 stopnia"
-    print(f"Masa {masa}kg, wzrost {wzrost}cm: BMI: {bmi}, zakres: {zakres}")
+    print(f"Masa {masa}kg, wzrost {wzrost}cm: BMI: {bmi_w}, zakres: {zakres}")
     return
 
-for i in range(50, 171, 5):
-    bmi(i, 200)
+
+bmi(float(input("Podaj swoja wagę [kg]: ")), float(input("Podaj swój wzrost [cm]: ")))

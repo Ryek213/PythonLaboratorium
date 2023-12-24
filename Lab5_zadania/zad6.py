@@ -12,7 +12,6 @@ def pole_trojkata(a, b, c):
     return (p * (p - a) * (p - b) * (p - c))**0.5
 
 
-
 print(pole_trojkata(3, 4, 5))
 print(pole_trojkata(1, 4, 0))
 print(pole_trojkata(-5, 6, 10))

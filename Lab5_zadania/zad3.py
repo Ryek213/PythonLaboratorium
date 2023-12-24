@@ -1,9 +1,7 @@
-def przedstaw(imie, wiek = 20):
+def przedstaw(imie, wiek=20):
+    """Funkcja wypisuje wpisane imie i wiek"""
     print(f"Imie: {imie}, wiek: {wiek}")
     return
-
-
-przedstaw.__doc__ = "Funkcja wypisuje wpisane imie i wiek"
 
 
 przedstaw("Marcin", 50)
