@@ -22,6 +22,6 @@ def czy_anagram(a, b):
         print(f'Ciągi znaków: "{a}" oraz "{b}" nie są anagramami')
 
 
-a = input("Podaj pierwszy tekst: ")
-b = input("Podaj drugi tekst: ")
-czy_anagram(a, b)
+a1 = input("Podaj pierwszy tekst: ")
+b1 = input("Podaj drugi tekst: ")
+czy_anagram(a1, b1)
